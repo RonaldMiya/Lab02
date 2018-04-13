@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    tools:context="rmiya.com.tarea.Main2Activity"
+    android:layout_below="@+id/imageTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight=".4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/cardview_back"
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gokui2"
+                android:src="@android:color/transparent" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageTop"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/dragon"-->
+            <!--android:contentDescription="@string/wallpapergoku" />-->
+
+            <TextView
+                android:id="@+id/textCentral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dragon_ball_super"
+                android:textColor="@color/colorPrincipal"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignStart="@+id/imageTop"
+                android:layout_alignEnd="@id/imageTop"
+                android:layout_alignTop="@id/imageTop"
+                android:layout_alignBottom="@id/imageTop"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textSecundario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ultimos_capitulos"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_alignStart="@+id/imageTop"
+                android:layout_alignEnd="@id/imageTop"
+                android:layout_alignTop="@id/imageTop"
+                android:layout_alignBottom="@id/imageTop"
+                android:gravity="bottom|end"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight=".6"
+            android:id="@+id/linearPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_cardview"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearsec2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pictureCard3"
+                    android:layout_height="@dimen/heigth_card"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardElevation="8dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_image_card"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cap126"
+                            android:contentDescription="@string/image_card" />
+
+                    </FrameLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_cardview"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            android:layout_weight=".6"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/capitulo_126"
+                                android:textSize="@dimen/size_card"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_127"
+                                android:textSize="@dimen/text_card_title"
+                                tools:ignore="SpUsage" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".08"
+                            android:orientation="vertical"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/three"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/button" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pictureCard4"
+                    android:layout_height="@dimen/heigth_card"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    card_view:cardElevation="8dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_image_card"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cap127"
+                            android:contentDescription="@string/image_card" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_cardview"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            android:layout_weight=".6"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/capitulo_127"
+                                android:textSize="@dimen/size_card"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_127"
+                                android:textSize="@dimen/text_card_title"
+                                tools:ignore="SpUsage" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".08"
+                            android:orientation="vertical"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/three"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/button" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearsec1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pictureCard"
+                    android:layout_height="@dimen/heigth_card"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardElevation="8dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_image_card"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cap128"
+                            android:contentDescription="@string/image_card" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_cardview"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            android:layout_weight=".6"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/capitulo_128"
+                                android:textSize="@dimen/size_card"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_128"
+                                android:textSize="@dimen/text_card_title"
+                                tools:ignore="SpUsage" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".08"
+                            android:orientation="vertical"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/three"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/button" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pictureCard2"
+                    android:layout_height="@dimen/heigth_card"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    card_view:cardElevation="8dp"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_image_card"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/proximo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cap129"
+                                android:contentDescription="@string/image_card" />
+
+                            <TextView
+                                android:id="@+id/textProx"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Proximamente"
+                                android:textColor="#FF0000"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_alignStart="@+id/proximo"
+                                android:layout_alignEnd="@id/proximo"
+                                android:layout_alignTop="@id/proximo"
+                                android:layout_alignBottom="@id/proximo"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_cardview"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="bottom"
+                            android:layout_weight=".6"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/capitulo_129"
+                                android:textSize="@dimen/size_card"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_129"
+                                android:textSize="@dimen/text_card_title"
+                                tools:ignore="SpUsage" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".08"
+                            android:orientation="vertical"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/three"
+                                android:layout_gravity="end"
+                                android:contentDescription="@string/button" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

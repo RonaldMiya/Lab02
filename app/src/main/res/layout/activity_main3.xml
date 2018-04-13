@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="rmiya.com.tarea.Main3Activity">
+
+    <include layout="@layout/toolbar_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_correo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_heigth"
+            >
+        </Spinner>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Event_name"
+            android:textSize="40sp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/from_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_day"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinner_heigth">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_hour"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinner_heigth"
+                android:layout_weight=".5">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"/>
+
+        <LinearLayout
+            android:id="@+id/to_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_day1"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinner_heigth"
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_hour1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinner_heigth"
+                android:layout_weight=".5"
+                tools:ignore="DuplicateIds">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_day"/>
+
+        <Spinner
+            android:layout_marginTop="15dp"
+            android:id="@+id/hora_inter_sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_heigth">
+        </Spinner>
+
+
+    </LinearLayout>
+
+</LinearLayout>

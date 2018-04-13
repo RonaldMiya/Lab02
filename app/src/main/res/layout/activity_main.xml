@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/general_padding"
+    android:paddingRight="@dimen/general_padding"
+    android:paddingTop="@dimen/general_padding"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    tools:context="rmiya.com.tarea.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/codCedula"
+        android:textColor="@color/textColor"
+        />
+
+    <EditText
+        android:id="@+id/codCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_edit"
+        android:hint="@string/codigo_cedula"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/departamento"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/margin_txt"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerDep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_edit"
+        >
+    </Spinner>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provincia"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/margin_txt"
+    />
+
+    <Spinner
+        android:id="@+id/spinnerProv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_edit"
+        >
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distrito"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/margin_txt"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerDis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_edit"
+        >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_txt"
+        android:hint="@string/direction"
+        />
+
+    <TextView
+        android:id="@+id/geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/geolocation"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="@dimen/margin_txt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_edit"
+        >
+
+        <EditText
+            android:id="@+id/editLatitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_left_edit"
+            android:hint="@string/latitud"
+            android:layout_weight=".42"
+            />
+
+        <EditText
+            android:id="@+id/editLongitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/longitud"
+            android:layout_weight=".42"
+            />
+
+        <ImageView
+            android:id="@+id/iconGPS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gps"
+            android:layout_weight=".085"
+            android:background="@drawable/ic_gps_fixed_black_24dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:layout_marginTop="@dimen/margin_button"
+        android:background="@color/textColor"
+        android:textColor="@android:color/background_light"
+        android:drawableStart="@drawable/ic_save_black_24dp"
+        android:paddingStart="@dimen/margin_edit"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        android:shadowColor="@android:color/background_dark"
+        tools:ignore="RtlSymmetry"
+        android:onClick="enviar"/>
+
+</LinearLayout>

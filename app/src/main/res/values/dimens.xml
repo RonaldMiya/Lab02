@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding">20dp</dimen>
+    <dimen name="margin_edit">10dp</dimen>
+    <dimen name="margin_txt">20dp</dimen>
+    <dimen name="margin_left_edit">10dp</dimen>
+    <dimen name="margin_button">85dp</dimen>
+    <dimen name="margin_cardview">10dp</dimen>
+    <dimen name="heigth_card">210sp</dimen>
+    <dimen name="txt_card">10dp</dimen>
+    <dimen name="size_card">15sp</dimen>
+    <dimen name="margin_image_card">2dp</dimen>
+    <dimen name="text_card_title">12dp</dimen>
+    <dimen name="size_spinner">15sp</dimen>
+    <dimen name="paddig_spinner">5dp</dimen>
+    <dimen name="spinner_heigth">50dp</dimen>
+    <dimen name="text_splash">30sp</dimen>
+    <dimen name="margin_splah_title">20dp</dimen>
+</resources>
